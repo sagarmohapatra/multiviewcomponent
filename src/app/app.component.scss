@@ -1,0 +1,46 @@
+.modify{
+   
+    display: flex
+}
+.modify li a{
+    text-decoration: none;
+    color: black;
+} 
+ul {
+    list-style-type: none;
+  }
+
+  .secondwrap  {
+    display: flex;
+   align-items: center;
+
+  }
+  .secondwrap li a{
+    font-size: 17px;
+    margin-left: -9rem;
+  }
+  .firstwrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+    align-items: center;
+    margin-left: -4rem;
+}
+.firstwrap li a{
+    font-size: 17px;
+    padding: 0 1rem;
+}
+.begin li a{
+  margin-right: 1rem; 
+  margin-top: 1px; 
+  margin-left: 2rem;
+}
+.img{
+    width: 8rem;
+    height: 3rem;
+    margin-top: 0px;
+}
+
+
+  

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent {
-
+  hideproduct:any=true
+  hide(){
+    this.hideproduct=false
+  }
 }

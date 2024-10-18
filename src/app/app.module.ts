@@ -7,11 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { GalleryModule } from './gallery/gallery.module';
+import { GalleryItems } from './appModals/gallery';
+
 
 @NgModule({
   declarations: [ 
     AppComponent,
-    SignInComponent
+    SignInComponent,
+    // ProductDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,7 @@ import { GalleryModule } from './gallery/gallery.module';
     MaterialModule,
     GalleryModule
   ],
-  providers: [],
+  providers: [GalleryItems],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

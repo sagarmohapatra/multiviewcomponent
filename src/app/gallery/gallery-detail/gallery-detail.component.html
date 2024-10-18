@@ -1,1 +1,163 @@
-<p>gallery-detail works!</p>
+<!-- <div class="container mt-4">
+  <div class="card">
+    <div class="row">
+      <div class="col-md-3">
+        <div style="margin-top: 1rem;margin-left: 2rem;">
+          <p>Gallery item:1</p>
+          <p>Title:Image 1</p>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div style="margin-top: 1rem">
+          <img
+            src="../../../assets/img_1.jpg"
+            style="height: 40rem; width: 50rem"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container mt-4">
+  <div class="card gallery">
+    <div>
+      <h1 class="fs-2">Our Gallery</h1>
+      <br />
+      <div class="row">
+        <div
+          class="col-md-3"
+          *ngFor="let item of galleryImages"
+          style="cursor: pointer;margin-bottom: 20px;"
+  
+          routerLink="{{item.id}}"
+        >
+          <div class="card" style="margin-left: 10px">
+            <a>
+              <img
+                src="{{item.imgurl}}"
+                style="width: 15rem; margin-top: 5px; margin-left: 5px;height: 10rem;"
+              />
+            </a>
+            <p style="margin-left: 5px; margin-top: 5px">{{item.title}}</p>
+          </div>
+        </div>
+        <!-- <div class="col-md-3">
+          <div class="card">
+            <img
+              src="../../assets/img_2.jpg"
+              style="width: 15rem; margin-top: 5px; margin-left: 5px"
+            />
+            <p style="margin-left: 5px; margin-top: 5px">Gallery item 2</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              src="../../assets/img_3.jpg"
+              style="width: 15rem; margin-top: 5px; margin-left: 5px"
+            />
+            <p style="margin-left: 5px; margin-top: 5px">Gallery item 3</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="margin-right: 10px">
+            <img
+              src="../../assets/img_4.jpg"
+              style="width: 15rem; margin-top: 5px; margin-left: 5px"
+            />
+            <p style="margin-left: 5px; margin-top: 5px">Gallery item 4</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md-3">
+          <div class="card" style="margin-left: 10px">
+            <img
+              src="../../assets/img_5.jpg"
+              style="width: 15rem; margin-top: 5px; margin-left: 5px"
+            />
+            <p style="margin-left: 5px; margin-top: 5px">Gallery item 5</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              src="../../assets/img_6.jpg"
+              style="
+                height: 10rem;
+                width: 15rem;
+                margin-top: 5px;
+                margin-left: 5px;
+              "
+            />
+            <p style="margin-left: 5px; margin-top: 5px">Gallery item 6</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              src="../../assets/img_7.jpg"
+              style="width: 15rem; margin-top: 5px; margin-left: 5px"
+            />
+            <p style="margin-left: 5px; margin-top: 5px">Gallery item 7</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="margin-right: 10px">
+            <img
+              src="../../assets/img_8.jpg"
+              style="width: 15rem; margin-top: 5px; margin-left: 5px"
+            />
+            <p style="margin-left: 5px; margin-top: 5px">Gallery item 8</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md-3">
+          <div class="card" style="margin-left: 10px">
+            <img
+              src="../../assets/img_9.jpg"
+              style="width: 15rem; margin-top: 5px; margin-left: 5px"
+            />
+            <p style="margin-left: 5px; margin-top: 5px">Gallery item 9</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              src="../../assets/img_1.jpg"
+              style="
+                height: 10rem;
+                width: 15rem;
+                margin-top: 5px;
+                margin-left: 5px;
+              "
+            />
+            <p style="margin-left: 5px; margin-top: 5px">Gallery item 10</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img
+              src="../../assets/img_2.jpg"
+              style="width: 15rem; margin-top: 5px; margin-left: 5px"
+            />
+            <p style="margin-left: 5px; margin-top: 5px">Gallery item 11</p>
+          </div>
+        </div> -->
+        <!-- <div class="col-md-3">
+          <div class="card" style="margin-right: 10px">
+            <img
+              src="../../assets/img_3.jpg"
+              style="width: 15rem; margin-top: 5px; margin-left: 5px"
+            />
+            <p style="margin-left: 5px; margin-top: 5px">Gallery item 12</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>

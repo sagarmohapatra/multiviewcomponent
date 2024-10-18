@@ -1,25 +1,25 @@
 <div class="container-fluid mt-4">
   <ul class="modify">
-    <div class="begin">
+    <div class="begin" *ngIf="imghide">
       <li>
         <a routerLinkActive="active" routerLink="/home"
-          ><img src="../assets/logo.png" class="img"
-        /></a>
+          ><img src="../assets/logo.png" class="img" />
+        </a>
       </li>
     </div>
     <div class="d-flex firstwrap">
-      <ng-container *ngIf="goBackLink">
-        <li>
-          <a href="#" class="back" class="text-primary">
-            <i class="fa-solid fa-chevron-left"></i> Back to Product
+      <!-- <ng-container > -->
+        <li >
+          <a style="margin-left: -30rem;" routerLink="{{goBackLink.url}}" *ngIf="goBackLink.text" href="#" class="back" class="text-primary">
+            <i class="fa-solid fa-chevron-left"></i>{{ goBackLink.text}}
           </a>
         </li>
-        <li>
+        <!-- <li>
           <a href="#" class="back" class="text-primary">
             <i class="fa-solid fa-chevron-left"></i> Back to Gallery
           </a>
-        </li>
-      </ng-container>
+        </li> -->
+      <!-- </ng-container> -->
       <div class="d-flex" *ngIf="headerNav">
         <li>
           <a routerLinkActive="active" routerLink="/home">Home</a>
@@ -47,20 +47,20 @@
           >
         </li>
         <ul class="d-flex" *ngIf="logedInUser">
-          <li class="d-flex " style="margin-right: 150px;" >
-            Welcome <strong class="text-primary">Sagar </strong>
-            <span style="margin-left: 20px;">|</span>
+          <li class="d-flex" style="margin-right: 150px">
+            Welcome <strong class="text-primary">&nbsp;{{logedInUser}} </strong>
+            <span style="margin-left: 20px">|</span>
           </li>
 
-          <li  >
-            <a style="margin-right: 20px;" href="#">Logout</a>
+          <li>
+            <a style="margin-right: 20px" (click)="logout()" href="javscript:void">Logout</a>
           </li>
         </ul>
       </ng-container>
     </div>
     <div *ngIf="headerContact">
       <a href="sagarkumarmohapatra5@gmail.com" class="text-black"
-        ><i></i>{{email}}</a
+        ><i></i>{{ email }}</a
       ><br />
       <a href="sagarkumarmohapatra5@gmail.com" class="text-black"
         ><i></i>+919777937220</a

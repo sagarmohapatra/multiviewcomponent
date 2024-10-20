@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/signin', pathMatch: 'full' },
   {
     path:"",
     loadChildren:()=>import('../app/home/home.module').then((m)=>m.HomeModule)
@@ -33,6 +34,7 @@ const routes: Routes = [
     loadChildren:()=>import('../app/sign-in/sign-in.module').then((m)=>m.SignInModule)
 
   },
+  { path: '**', redirectTo: '/home' } 
 ];
 
 @NgModule({
